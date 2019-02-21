@@ -1,3 +1,5 @@
-*.psd
-Foliac.jpg
 node_modules
+dist
+package-lock.json
+*.psd
+!.ini
