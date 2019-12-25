@@ -20,7 +20,7 @@ gulp.task('sass:dev', () => {
     .pipe($.sourcemaps.init())
     .pipe($.sass().on('error', $.notify.onError("SASS-Error: <%= error.message %>")))
     .pipe($.autoprefixer({
-     browsers: ['last 2 versions'],
+			overrideBrowserslist: ['last 10 versions'],
      cascade: false
    }))
     .pipe($.sourcemaps.write())
@@ -34,7 +34,7 @@ gulp.task('sass:prod', () => {
     return gulp.src('src/scss/**/*.scss')
     .pipe($.sass({outputStyle: 'compressed'}).on('error', $.notify.onError("SASS-Error: <%= error.message %>")))
     .pipe($.autoprefixer({
-     browsers: ['last 2 versions'],
+			overrideBrowserslist: ['last 10 versions'],
      cascade: false
    }))
     .pipe(gulp.dest('app/css'))
