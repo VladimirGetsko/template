@@ -1,5 +1,5 @@
 {
-  "name": "gulp_seed",
+  "name": "template",
   "version": "1.0.0",
   "description": "assembler",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp"
   },
-  "author": "Sergey Chuprina",
+  "author": "Vladimir Getsko",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.1.6",
